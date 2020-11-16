@@ -1,6 +1,6 @@
 # TheTimeMachine
 
-![Time](https://media.giphy.com/media/3ov9jU4ycPvfrPTsly/giphy.gif)
+![Time](pix/giphy.gif)
 
 
 ## code of conduct
