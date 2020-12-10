@@ -3,6 +3,7 @@ min = null;
 h = null;
 
 function setup() {
+  pixelDensity(displayDensity());
   createCanvas(800, 800);
 };
 

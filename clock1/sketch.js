@@ -1,6 +1,7 @@
 let s, m ,h;
 
 function setup() {
+  pixelDensity(displayDensity());
   createCanvas(400, 400);
 }
 

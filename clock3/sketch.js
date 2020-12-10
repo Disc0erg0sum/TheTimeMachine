@@ -1,4 +1,5 @@
 function setup() {
+  pixelDensity(displayDensity());
   createCanvas(400, 400);
   background(220);
   angleMode(DEGREES);
