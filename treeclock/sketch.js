@@ -1,10 +1,8 @@
-var test;
-
 let minrings = [];
 let rings = [];
 
 //let c = [color('#3D2100'), color('#724A1D'), color('#64341B')];
-var minscl = 20;
+var minscl = 18;
 
 let bg;
 
@@ -37,11 +35,7 @@ function draw() {
   background(255);
   randomSeed(1);
 
-  if(mouseIsPressed){
-    test++;
-  } else {
-    test = 0;
-  }
+  minscl = height/40;
 
   let m = map(minute(),0,60,0,minscl);
   let c = [color('#3D2100'), color('#724A1D'), color('#64341B')];
@@ -58,7 +52,7 @@ function draw() {
   }
 
   for (let i = 0; i < hour(); i++){
-  	strokeWeight(4);
+  	strokeWeight(minscl/6);
   	//stroke(111,89,70);
   	stroke(c[int(random(0, c.length))]);
   	noFill();
