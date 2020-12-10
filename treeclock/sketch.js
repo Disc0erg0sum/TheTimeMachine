@@ -4,7 +4,7 @@ let minrings = [];
 let rings = [];
 
 //let c = [color('#3D2100'), color('#724A1D'), color('#64341B')];
-var minscl = 30;
+var minscl = 20;
 
 let bg;
 
@@ -58,7 +58,7 @@ function draw() {
   }
 
   for (let i = 0; i < hour(); i++){
-  	strokeWeight(5);
+  	strokeWeight(4);
   	//stroke(111,89,70);
   	stroke(c[int(random(0, c.length))]);
   	noFill();
