@@ -1,14 +1,15 @@
 function setup() {
   pixelDensity(displayDensity());
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   background(220);
   angleMode(DEGREES);
+  frameRate(3);
 }
 
 function draw() {
+  
   translate(width / 2, height / 2);
-
-  let radius = 200;
+  let radius = min(width, height)/2;
 
   let xSec = cos(map(second(), 0, 60, 0, 360)) * radius;
   let ySec = sin(map(second(), 0, 60, 0, 360)) * radius;
@@ -18,7 +19,8 @@ function draw() {
 
   let xHour = cos(map(hour(), 0, 24, 0, 360)) * radius;
   let yHour = sin(map(hour(), 0, 24, 0, 360)) * radius;
-
+  strokeWeight(0.2);
+  stroke(10,10,10,85);
   noFill();
   beginShape();
   vertex(xSec, ySec);
