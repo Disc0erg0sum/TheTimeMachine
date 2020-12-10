@@ -2,7 +2,7 @@ let s, m ,h;
 
 function setup() {
   pixelDensity(displayDensity());
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -13,7 +13,6 @@ function draw() {
   draw_hour(hour());
 
 }
-
 
 function draw_sec(s){
   push();
