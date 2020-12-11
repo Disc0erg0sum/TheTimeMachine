@@ -25,7 +25,7 @@ function setup() {
   for (let i = 0; i < 300000; i++) {
   	let x = random(width);
   	let y = random(height);
-  	let s = noise(x*0.01, y*0.01) + 0.3;
+  	let s = noise(x*0.01, y*0.01) + 0.0009*min(windowWidth,windowHeight);
   	bg.fill(255,50);
   	bg.rect(x, y, s, s);
   }
