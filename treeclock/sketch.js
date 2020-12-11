@@ -25,7 +25,7 @@ function setup() {
   for (let i = 0; i < 300000; i++) {
   	let x = random(width);
   	let y = random(height);
-  	let s = noise(x*0.01, y*0.01) + 0.5;
+  	let s = noise(x*0.01, y*0.01) + 0.3;
   	bg.fill(255,50);
   	bg.rect(x, y, s, s);
   }
@@ -35,7 +35,7 @@ function draw() {
   background(255);
   randomSeed(1);
 
-  minscl = height/40;
+  minscl = min(width,height)/40;
 
   let m = map(minute(),0,60,0,minscl);
   let c = [color('#3D2100'), color('#724A1D'), color('#64341B')];
