@@ -47,14 +47,14 @@ function draw() {
   for (let i = 0; i < hour()+1; i++){
   	noStroke()
   	fill(250,230,188,225);
-  	minrings[i].show(i*minscl+m, second()/10);
+  	minrings[i].show(i*minscl+m, second());
   }
 
   for (let i = 0; i < hour(); i++){
   	strokeWeight(minscl/6);
   	stroke(c[int(random(0, c.length))]);
   	noFill();
-  	rings[i].show(minscl+i*minscl, second()/10);
+  	rings[i].show(minscl+i*minscl, second());
   }
 
   pop();
