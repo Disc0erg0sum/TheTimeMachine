@@ -8,9 +8,9 @@
 
 1. Don't panic
 
-2. care the docs
+2. Take care of the docs
 
-3. keep the Code clean
+3. Keep the Code clean
 
 4. Easter Eggs are welcome!
 
