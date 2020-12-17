@@ -11,6 +11,17 @@ function setup() {
   numw = 32;
   numh = 32;
 
+  /*rectMode(CENTER);
+  bg = createGraphics(width, height);
+  bg.noStroke();
+  for (let i = 0; i < 300000; i++) {
+    let x = random(width);
+    let y = random(height);
+    let s = noise(x*0.01, y*0.01) + 0.0009*min(windowWidth,windowHeight);
+    bg.fill(255,50);
+    bg.rect(x, y, s, s);
+  }*/
+
 
 }
 
@@ -41,5 +52,7 @@ function draw() {
     strokeWeight(min(width,height)/300);
     line(0,i*height/numh,width,s);
   }
+
+  //image(bg,0,0);
 
 }
