@@ -1,6 +1,5 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(10);
   clockGerman = new Clock(width, height / 4, 0, 0, 0, 0, 0);
   clockBerlin = new Clock(width, height / 4, 0, height / 4, 0, -6, -22);
   clockBremen = new Clock(width, height / 4, 0, (height / 4) * 2, 0, -24, -46);
