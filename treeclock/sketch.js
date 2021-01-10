@@ -1,3 +1,5 @@
+var canvas;
+
 let minrings = [];
 let rings = [];
 
@@ -5,9 +7,15 @@ var minscl = 18;
 
 let bg;
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(255);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
+  background(235);
 
   for (let i = 0; i < 25; i++){
   	minrings[i] = new Treering();
