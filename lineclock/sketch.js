@@ -2,13 +2,13 @@
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(220);
+  background(245);
   drawingContext.shadowOffsetX = 2;
   drawingContext.shadowOffsetY = 2;
 }
 
 function draw() {
-  background(220);
+  background(245);
 
   push()
   drawingContext.shadowBlur = 3;

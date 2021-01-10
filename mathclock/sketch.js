@@ -119,6 +119,8 @@ function setup() {
   cols = [color('#E4CEF2'),color('#E36A2E'),color('#CF2C34'),color('#74184C'),color('#465C85')];
 
   updateArray();
+
+  background(245);
 }
 
 
@@ -128,7 +130,7 @@ function draw(){
     updateArray();
   }
 
-  background(255);
+  background(245);
   fill(cols[colIndex]);
 
   let ts = min(width,height)*0.25;

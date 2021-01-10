@@ -11,7 +11,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
-  background(224, 198, 92);
+  background(245);
 
   //numw = windowWidth/80;
   //numh = windowHeight/80;
@@ -34,7 +34,7 @@ function setup() {
 }
 
 function draw() {
-  background(235);
+  background(245);
 
   let s = map(second(),0,60,0,height);
   let m = map(minute(),0,60,0,height);

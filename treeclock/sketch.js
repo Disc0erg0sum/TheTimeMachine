@@ -15,7 +15,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
-  background(235);
+  background(245);
 
   for (let i = 0; i < 25; i++){
   	minrings[i] = new Treering();
@@ -39,7 +39,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(245);
   randomSeed(1);
 
   minscl = min(width,height)/40;

@@ -8,11 +8,11 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
-  background(235);
+  background(245);
 }
 
 function draw() {
-  background(235);
+  background(245);
 
   let mil = map(millis()%1000,0,1000,0,windowWidth);
   let sec = map(second(),0,60,0,windowWidth);
