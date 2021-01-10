@@ -1,11 +1,18 @@
+var canvas;
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(20);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
+  background(235);
 }
 
 function draw() {
-  background(20);
+  background(235);
 
 
   let s = map(second(),0,60,0,TWO_PI) - HALF_PI;
@@ -33,15 +40,15 @@ function draw() {
   translate(width/4,height/2);
   push();
   rotate(-PI/6+s);
-  drawWatch(0,0,12,80,'チク');
+  drawWatch(0,0,12,width/16,'チク');
   pop();
   push();
   rotate(-PI/6 +m);
-  drawWatch(0,0,1,120,'タク');
+  drawWatch(0,0,1,width/10,'タク');
   pop();
   push();
   rotate(-PI/6 +h8);
-  drawWatch(0,0,1,120,'タク');
+  drawWatch(0,0,1,width/10,'タク');
   pop();
   pop();
 
@@ -50,15 +57,15 @@ function draw() {
   translate(width/2,height/2);
   push();
   rotate(-PI/6+s);
-  drawWatch(0,0,12,80,'TICK');
+  drawWatch(0,0,12,width/16,'TICK');
   pop();
   push();
   rotate(-PI/6 +m);
-  drawWatch(0,0,1,120,'TACK');
+  drawWatch(0,0,1,width/10,'TACK');
   pop();
   push();
   rotate(-PI/6 +h);
-  drawWatch(0,0,1,120,'TACK');
+  drawWatch(0,0,1,width/10,'TACK');
   pop();
   pop();
 
@@ -67,15 +74,15 @@ function draw() {
   translate(width-width/4,height/2);
   push();
   rotate(-PI/6+s);
-  drawWatch(0,0,12,80,'clit');
+  drawWatch(0,0,12,width/16,'clit');
   pop();
   push();
   rotate(-PI/6 +m45);
-  drawWatch(0,0,1,120,'caqq');
+  drawWatch(0,0,1,width/10,'caqq');
   pop();
   push();
   rotate(-PI/6 +h4);
-  drawWatch(0,0,1,120,'caqq');
+  drawWatch(0,0,1,width/10,'caqq');
   pop();
   pop();
 }
@@ -90,7 +97,8 @@ function drawWatch(x,y,num,radius,txt){
     let x = cos(angle) * radius;
     rotate(PI/6);
     push();
-    fill(255);
+    fill(10);
+    textSize(width/100);
     textAlign(CENTER);
     text(txt,x,0);
     pop();
