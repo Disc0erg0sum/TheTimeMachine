@@ -9,6 +9,8 @@ function setup() {
   canvas.position(0,0);
   canvas.style('z-index','-1');
   background(235);
+
+  textFont('Noto Sans JP');
 }
 
 function draw() {
