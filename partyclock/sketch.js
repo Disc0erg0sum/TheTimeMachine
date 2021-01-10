@@ -1,8 +1,16 @@
+var canvas;
+
 var numw;
 var numh;
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
   background(224, 198, 92);
 
   //numw = windowWidth/80;
@@ -26,7 +34,7 @@ function setup() {
 }
 
 function draw() {
-  background("#DAD8A7");
+  background(235);
 
   let s = map(second(),0,60,0,height);
   let m = map(minute(),0,60,0,height);
@@ -34,25 +42,24 @@ function draw() {
 
 
   for (let i = 0; i < numw; i++) {
-    stroke("#99B898");
+    stroke("#F2B705");
     strokeWeight(min(width,height)/90);
     line(h,0,i*width/numw,height);
   }
 
 
   for (let i = 0; i < numh; i++) {
-    stroke("#E84A5F");
+    stroke("#3DADF2");
     strokeWeight(min(width,height)/200);
     line(0,m,width,i*height/numh);
   }
 
 
   for (let i = 0; i < numh; i++) {
-    stroke("#2A363B");
-    strokeWeight(min(width,height)/300);
+    stroke("#F26D91");
+    strokeWeight(min(width,height)/250);
     line(0,i*height/numh,width,s);
   }
 
   //image(bg,0,0);
-
 }
