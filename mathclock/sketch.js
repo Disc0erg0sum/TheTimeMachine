@@ -92,6 +92,8 @@ function getRandNum(num){
 
 //////////////////////////////////////////////////////////////////////
 
+var canvas;
+
 let colIndex = 0;
 let cols;
 const fps = 60;
@@ -101,8 +103,14 @@ const span = fps;
   font = loadFont();
 }*/
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
   frameRate(fps);
 
   textFont('Titillium Web');
