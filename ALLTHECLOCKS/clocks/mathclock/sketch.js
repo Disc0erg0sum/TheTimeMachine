@@ -108,9 +108,8 @@ function windowResized(){
 }
 
 function setup() {
+  pixelDensity(displayDensity());
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0,0);
-  canvas.style('z-index','-1');
   frameRate(fps);
 
   textFont('Titillium Web');

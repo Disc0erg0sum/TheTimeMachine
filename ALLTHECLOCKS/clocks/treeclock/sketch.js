@@ -8,13 +8,12 @@ var minscl = 18;
 let bg;
 
 function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
+	resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0,0);
-  canvas.style('z-index','-1');
+	pixelDensity(displayDensity());
+	canvas = createCanvas(windowWidth, windowHeight);
   background(245);
 
   for (let i = 0; i < 25; i++){
@@ -38,8 +37,8 @@ function setup() {
   }
 }
 
-function draw() {
-  background(245);
+function draw() { 
+	background(245);
   randomSeed(1);
 
   minscl = min(width,height)/40;
