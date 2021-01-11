@@ -15,7 +15,7 @@ function draw() {
 
 function draw_sec(s) {
   push();
-  translate(width / 2 - 70, height / 2);
+  translate(width / 2 + 70, height / 2);
   fill(0, 0, 0, 0);
   stroke(1);
   square(0, 0, 60);
@@ -37,7 +37,7 @@ function draw_min(m) {
 
 function draw_hour(h) {
   push();
-  translate(width / 2 + 70, height / 2);
+  translate(width / 2 - 70, height / 2);
   fill(0, 0, 0, 0);
   stroke(1);
   square(0, 0, 60);

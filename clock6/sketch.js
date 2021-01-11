@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(245);
   showHour();
   showMin();
   showSec();
@@ -15,30 +15,30 @@ function showMin() {
   push();
   translate(width / 2, height / 2);
   fill(c);
-  stroke(0);
+  strokeWeight(0);
   rectMode(CENTER);
-  rect(0, 0, 40, 100);
+  square(0, 0, 60);
   pop();
 }
 
 function showSec() {
   let c = color(0, 0, second() * 4.26);
   push();
-  translate(width / 2 + 50, height / 2);
+  translate(width / 2 + 70, height / 2);
   fill(c);
-  stroke(0);
+  strokeWeight(0);
   rectMode(CENTER);
-  rect(0, 0, 40, 100);
+  square(0, 0, 60);
   pop();
 }
 
 function showHour() {
   let c = color(hour() * 10.6, 0, 0);
   push();
-  translate(width / 2 - 50, height / 2);
+  translate(width / 2 - 70, height / 2);
   fill(c);
-  stroke(0);
+  strokeWeight(0);
   rectMode(CENTER);
-  rect(0, 0, 40, 100);
+  square(0, 0, 60);
   pop();
 }

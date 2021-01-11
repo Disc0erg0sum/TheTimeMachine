@@ -1,25 +1,26 @@
 
 let sec;
 let min;
-let hour;
+let hours;
 
 function setup() {
   createCanvas(400, 400);
 }
   
 function draw() {
-  background(220);
-  time[0] = toBin(hour());
-  time[1] = toBin(minute());
-  time[2] = toBin(second());
-
-  text(time, 50, 50);
+  background(245);
+  updateTime();
+  text(hours, 50, 50);
+  text(min, 50,60);
+  text(sec, 50,70);
 
 }
 
 
-function (update) {
-  
+function updateTime() {
+  hours = toBin(hour());
+  min = toBin(minute());
+  sec = toBin(second());
 }
   
 function toBin(dec) {
