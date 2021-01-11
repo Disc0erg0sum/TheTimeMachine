@@ -1,4 +1,4 @@
-let s, m ,h;
+let s, m, h;
 
 function setup() {
   pixelDensity(displayDensity());
@@ -11,29 +11,28 @@ function draw() {
   draw_sec(second());
   draw_min(minute());
   draw_hour(hour());
-
 }
 
-function draw_sec(s){
+function draw_sec(s) {
   push();
-  translate(width/2 - 70, height/2);
-  fill(0,0,0,0);
+  translate(width / 2 - 70, height / 2);
+  fill(0, 0, 0, 0);
   stroke(1);
   square(0, 0, 60);
   fill(10);
-  square(0,0,s);
-  pop()
+  square(0, 0, s);
+  pop();
 }
 
 function draw_min(m) {
   push();
-  translate(width/2, height/2);
-  fill(0,0,0,0);
+  translate(width / 2, height / 2);
+  fill(0, 0, 0, 0);
   stroke(1);
   square(0, 0, 60);
   fill(10);
-  square(0,0,m);
-  pop()
+  square(0, 0, m);
+  pop();
 }
 
 function draw_hour(h) {
@@ -46,4 +45,3 @@ function draw_hour(h) {
   square(0, 0, mag(h, 0, 23, 0, 59));
   pop();
 }
-

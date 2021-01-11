@@ -1,5 +1,7 @@
 
-let time = [];
+let sec;
+let min;
+let hour;
 
 function setup() {
   createCanvas(400, 400);
@@ -14,7 +16,11 @@ function draw() {
   text(time, 50, 50);
 
 }
+
+
+function (update) {
   
+}
   
 function toBin(dec) {
     return dec.toString(2);
