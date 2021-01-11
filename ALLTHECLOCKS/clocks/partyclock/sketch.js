@@ -8,9 +8,8 @@ function windowResized(){
 }
 
 function setup() {
+  pixelDensity(displayDensity());
   canvas = createCanvas(windowWidth, windowHeight);
-  canvas.position(0,0);
-  canvas.style('z-index','-1');
   background(245);
 
   //numw = windowWidth/80;
