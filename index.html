@@ -1,31 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="w3.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>clockstest</title>
+    <script src="bg.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="funktion.js"></script>
+  </head>
 
-    <title>Clock</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-    <p><a href="clock1/index.html">Clock1 - Squares</a></p>
-    <p><a href="clock2/index.html">Clock2 - Watchface (!)</a></p>
-    <p><a href="clock3/index.html">Clock3 - Triangle</a></p>
-    <p><a href="lineclock/index.html">Clock4 - Dots (!)</a></p>
-    <p><a href="partyclock/index.html">Clock5 - Party</a></p>
-    <p><a href="treeclock/index.html">Clock6 - Tree</a></p>
-    <p><a href="barcodeclock/index.html">Clock7 - Barcode</a></p>
-    <p><a href="clock4/index.html">Clock8 - Realtime (!)</a></p>
-    <p><a href="textclock/index.html">Clock9 - TickTack</a></p>
-    <p><a href="mathclock/index.html">Clock10 - Math</a></p>
-    <p><a href="clock5/index.html">Clock11 - Binary (!)</a></p>
-    <p><a href="clock6/index.html">Clock12 - Color</a></p>
-    <br>
-    <p><a href="ALLTHECLOCKS/index.html">WebsiteBuild</a></p>
-
-</body>
-
+  <body>
+    <!--background-->
+    <div class="bg" id="iframe_div">
+      <noscript>
+        <iframe src="default.htm" name="testiframe"></iframe>
+      </noscript>
+    </div>
+    <!-- content -->
+    <div class="w3-display-container" style="height: 100vh">
+      <div id="main">
+        <div class="w3-padding w3-display-topleft">
+          <h1>TimeMachine</h1>
+        </div>
+        <div id="grid_btn" class="w3-padding w3-display-topright">
+          <img src="img/grid_icn.svg" alt="Gallerie" />
+        </div>
+        <div id="about_btn" class="w3-padding w3-display-bottomright">
+          <img src="img/about_icn.svg" alt="Info" />
+        </div>
+      </div>
+      <!-- about -->
+      <div id="about" class="w3-display-middle w3-card w3-round bg-white hidden">
+        <div class=" w3-panel">
+          <div class="w3-padding">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <button class="close">close</button>
+          </div>
+        </div>
+      </div>
+      <!-- grid -->
+      <div id="grid" class="w3-overlay bg-white hidden">
+          <div class="w3-padding w3-row-padding">
+            <div id="c1" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 1</p>
+            </div>
+            <div id="c2" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 2</p>
+            </div>
+            <div id="c3" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 1</p>
+            </div>
+            <div id="c4" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 3</p>
+            </div>
+            <div id="c5" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 4</p>
+            </div>
+            <div id="c6" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 5</p>
+            </div>
+            <div id="c7" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 6</p>
+            </div>
+            <div id="c8" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 7</p>
+            </div>
+            <div id="c9" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 7</p>
+            </div>
+            <div id="c10" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 7</p>
+            </div>
+            <div id="c11" class="w3-quarter w3-center">
+              <img src="img/200x200.jpg" alt="" style="width: 100%;">
+              <p>test grid 7</p>
+            </div>
+            <button class="close">close</button>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
