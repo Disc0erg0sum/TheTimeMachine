@@ -1,3 +1,5 @@
+
+// random background
 var pages=[
 "clocks/mathclock/index.html",
 "clocks/partyclock/index.html",
