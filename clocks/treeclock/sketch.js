@@ -26,11 +26,11 @@ function setup() {
 
   //imagenoise
   rectMode(CENTER);
-  bg = createGraphics(width, height);
+  bg = createGraphics(windowWidth, windowHeight);
   bg.noStroke();
   for (let i = 0; i < 300000; i++) {
-  	let x = random(width);
-  	let y = random(height);
+  	let x = random(windowWidth);
+  	let y = random(windowHeight);
   	let s = noise(x*0.01, y*0.01) + 0.0009*min(windowWidth,windowHeight);
   	bg.fill(255,50);
   	bg.rect(x, y, s, s);
@@ -41,13 +41,13 @@ function draw() {
 	background(245);
   randomSeed(1);
 
-  minscl = min(width,height)/40;
+  minscl = min(windowWidth,windowHeight)/40;
 
   let m = map(minute(),0,60,0,minscl);
   let c = [color('#3D2100'), color('#724A1D'), color('#64341B')];
 
   push();
-  translate(width/2,height/2);
+  translate(windowWidth/2,windowHeight/2);
 
   drawingContext.shadowColor = "#724A1D";
 

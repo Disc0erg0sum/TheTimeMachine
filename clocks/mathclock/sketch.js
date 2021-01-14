@@ -132,18 +132,18 @@ function draw(){
   background(245);
   fill(cols[colIndex]);
 
-  let ts = min(width,height)*0.25;
+  let ts = min(windowWidth,windowHeight)*0.25;
   textAlign(LEFT,CENTER);
 
   setTextSize(hArray.disp,ts);
-  text(hArray.disp,width*0.1,height/2-ts*0.6); 
+  text(hArray.disp,windowWidth*0.1,windowHeight/2-ts*0.6); 
   setTextSize(mArray.disp,ts);
-  text(mArray.disp,width*0.1,height/2+ts*0.6); 
+  text(mArray.disp,windowWidth*0.1,windowHeight/2+ts*0.6); 
 }
 
 function setTextSize(str,ts){
   textSize(ts);
-  let w = 0.7*width;
+  let w = 0.7*windowWidth;
   let tw = textWidth(str);
   if(tw > w){
     textSize(ts * w / tw);
