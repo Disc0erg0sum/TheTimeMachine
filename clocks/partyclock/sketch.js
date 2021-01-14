@@ -1,5 +1,3 @@
-var canvas;
-
 var numw;
 var numh;
 
@@ -9,7 +7,7 @@ function windowResized(){
 
 function setup() {
   pixelDensity(displayDensity());
-  canvas = createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background(245);
 
   //numw = windowWidth/80;

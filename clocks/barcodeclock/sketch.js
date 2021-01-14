@@ -1,12 +1,10 @@
-var canvas;
-
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
 
 function setup() {
   pixelDensity(displayDensity());
-  canvas = createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background(245);
 }
 

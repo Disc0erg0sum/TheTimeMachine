@@ -1,5 +1,3 @@
-var canvas;
-
 let minrings = [];
 let rings = [];
 
@@ -13,8 +11,8 @@ function windowResized(){
 
 function setup() {
 	pixelDensity(displayDensity());
-	canvas = createCanvas(windowWidth, windowHeight);
-  background(245);
+	createCanvas(windowWidth, windowHeight);
+	background(245);
 
   for (let i = 0; i < 25; i++){
   	minrings[i] = new Treering();
