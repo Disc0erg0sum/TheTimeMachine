@@ -23,7 +23,7 @@ function draw() {
 
   let xHour = cos(map(hour(), 0, 24, 0, 360)) * radius;
   let yHour = sin(map(hour(), 0, 24, 0, 360)) * radius;
-  strokeWeight(1);
+  strokeWeight(0.2);
   stroke(10,10,10,85);
   noFill();
   beginShape();
