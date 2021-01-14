@@ -92,7 +92,6 @@ function getRandNum(num){
 
 //////////////////////////////////////////////////////////////////////
 
-var canvas;
 
 let colIndex = 0;
 let cols;
@@ -109,7 +108,7 @@ function windowResized(){
 
 function setup() {
   pixelDensity(displayDensity());
-  canvas = createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
   frameRate(fps);
 
   textFont('Titillium Web');
