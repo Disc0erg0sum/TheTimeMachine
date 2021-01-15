@@ -19,12 +19,23 @@ function draw() {
   //text(millis(),200,200);
 
 
-  stroke(10);
-  strokeWeight(5);
+  //stroke(10);
+  //strokeWeight(10);
 
+  stroke("#1B2226");
+  strokeWeight(windowWidth/8);   //16
   line(h,0,h,height);
+
+  stroke("#3E5159");
+  strokeWeight(windowWidth/60);   //70
   line(min,0,min,height);
+
+  stroke("#64818C");
+  strokeWeight(windowWidth/110);   //120
   line(sec,0,sec,height);
+
+  stroke("#99B8BF");
+  strokeWeight(windowWidth/200);   //200
   line(mil,0,mil,height);
 
 }
