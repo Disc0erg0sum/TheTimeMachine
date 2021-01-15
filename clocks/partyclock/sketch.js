@@ -13,8 +13,8 @@ function setup() {
   //numw = windowWidth/80;
   //numh = windowHeight/80;
 
-  numw = 32;
-  numh = 32;
+  numw = 50;
+  numh = 50;
 
   /*rectMode(CENTER);
   bg = createGraphics(width, height);
@@ -40,21 +40,24 @@ function draw() {
 
   for (let i = 0; i < numw; i++) {
     stroke("#F2B705");
-    strokeWeight(min(width,height)/90);
+    //strokeWeight(min(width,height)/90);
+    strokeWeight(1);
     line(h,0,i*width/numw,height);
   }
 
 
   for (let i = 0; i < numh; i++) {
     stroke("#3DADF2");
-    strokeWeight(min(width,height)/200);
+    //strokeWeight(min(width,height)/200);
+    strokeWeight(1);
     line(0,m,width,i*height/numh);
   }
 
 
   for (let i = 0; i < numh; i++) {
     stroke("#F26D91");
-    strokeWeight(min(width,height)/250);
+    //strokeWeight(min(width,height)/250);
+    strokeWeight(1);
     line(0,i*height/numh,width,s);
   }
 
