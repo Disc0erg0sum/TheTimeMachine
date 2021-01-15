@@ -6,6 +6,7 @@ function windowResized() {
 function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
+  smooth();
   clockGerman = new Clock(width, height / 4, 0, 0, 0, 0, 0, "Germany");
   clockBerlin = new Clock(width, height / 4, 0, height / 4, 0, -6, -22, "Berlin");
   clockBremen = new Clock(width, height / 4, 0, (height / 4) * 2, 0, -24, -46, "Bremen");

@@ -5,6 +5,7 @@ function windowResized() {
 function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
+  smooth();
   background(245);
   angleMode(DEGREES);
   frameRate(3);

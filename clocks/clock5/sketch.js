@@ -4,7 +4,9 @@ let min;
 let hours;
 
 function setup() {
-  createCanvas(400, 400);
+  pixelDensity(displayDensity());
+  createCanvas(windowWidth, windowHeight);
+  smooth();
 }
   
 function draw() {
