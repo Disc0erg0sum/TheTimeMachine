@@ -22,20 +22,26 @@ function draw() {
   //stroke(10);
   //strokeWeight(10);
 
-  stroke("#1B2226");
+  stroke(27, 34, 38);
   strokeWeight(windowWidth/8);   //16
   line(h,0,h,height);
 
-  stroke("#3E5159");
+  stroke(62, 81, 89);
   strokeWeight(windowWidth/60);   //70
   line(min,0,min,height);
 
-  stroke("#64818C");
+  stroke(100, 129, 140);
   strokeWeight(windowWidth/110);   //120
   line(sec,0,sec,height);
 
-  stroke("#99B8BF");
+  stroke(153, 184, 191);
   strokeWeight(windowWidth/200);   //200
   line(mil,0,mil,height);
 
 }
+
+
+
+
+
+
