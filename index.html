@@ -7,7 +7,6 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="w3.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>clockstest</title>
     <script src="bg.js"></script>
@@ -23,66 +22,68 @@
       </noscript>
     </div>
     <!-- content -->
-    <div class="w3-display-container" style="height: 100vh">
+    <div class="display-container">
       <div id="main">
-        <div class="w3-padding w3-display-topleft">
+        <div class="display-topleft">
           <h1>TimeMachine</h1>
         </div>
-        <div id="grid_btn" class="w3-padding w3-display-topright">
+        <div id="grid_btn" class="btn display-topright">
           <img src="img/grid_icn.svg" alt="Gallerie" />
         </div>
-        <div id="about_btn" class="w3-padding w3-display-bottomright">
+        <div id="about_btn" class="btn display-bottomright">
           <img src="img/about_icn.svg" alt="Info" />
         </div>
       </div>
-      <!-- about -->
-      <div id="about" class="w3-display-middle w3-card w3-round bg-white hidden">
-        <div class=" w3-panel">
-          <div class="w3-padding">
-            <h2>About</h2>
-            <p>This is a project created by Pascal Struck and Jendrik Bradaczek as part of the course „Zeitmaschine“ by Prof. Boris Müller at the University of Applied Sciences Potsdam during the winter semester 20/21.</p>
-            <button class="close">close</button>
-          </div>
-        </div>
+    </div>
+    <!-- about -->
+    <div id="about" class="display-middle card hidden">
+      <div class="w3-padding">
+        <h2>About</h2>
+        <p>
+          This is a project created by Pascal Struck and Jendrik Bradaczek as
+          part of the course „Zeitmaschine“ by Prof. Boris Müller at the
+          University of Applied Sciences Potsdam during the winter semester
+          20/21.
+        </p>
+        <button class="close">close</button>
       </div>
-      <!-- grid -->
-      <div id="grid" class="w3-overlay bg-white hidden">
-          <div class="w3-row-padding">
-            <div id="c1" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c2" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c3" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c4" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c5" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c6" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c7" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c8" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c9" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c10" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <div id="c11" class="w3-quarter w3-panel">
-              <img src="img/200x200.jpg" alt="">
-            </div>
-            <button class="close">close</button>
-          </div>
+    </div>
+    <!-- grid -->
+    <div id="grid" class="overlay hidden">
+      <div>
+        <div id="c1" class="gallery">
+          <img src="img/mathclock.png" alt="" />
+        </div>
+        <div id="c2" class="gallery">
+          <img src="img/partyclock.png" alt="" />
+        </div>
+        <div id="c3" class="gallery">
+          <img src="img/barcodeclock.png" alt="" />
+        </div>
+        <div id="c4" class="gallery">
+          <img src="img/textclock.png" alt="" />
+        </div>
+        <div id="c5" class="gallery">
+          <img src="img/treeclock.png" alt="" />
+        </div>
+        <div id="c6" class="gallery">
+          <img src="img/clock1.png" alt="" />
+        </div>
+        <div id="c7" class="gallery">
+          <img src="img/clock2.png" alt="" />
+        </div>
+        <div id="c8" class="gallery">
+          <img src="img/clock3.png" alt="" />
+        </div>
+        <div id="c9" class="gallery">
+          <img src="img/clock4.png" alt="" />
+        </div>
+        <div id="c10" class="gallery">
+          <img src="img/200x200.jpg" alt="" />
+        </div>
+        <div id="c11" class="gallery">
+          <img src="img/clock6.png" alt="" />
+        </div>
       </div>
     </div>
   </body>
