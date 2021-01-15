@@ -15,8 +15,8 @@ h1 {
   margin: 16px 25px 16px 25px;
 }
 h2,
-p{
-	margin: 0;
+p {
+  margin: 0;
 }
 /* layout */
 body {
@@ -27,13 +27,13 @@ body {
   margin: 10px 10px 20px 10px;
   padding: 13px;
 }
-.btn img{
-	display: block;
-	width: 100%;
-	height: auto;
+.btn img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-.btn:hover{
-	transform: scale(1.5);
+.btn:hover {
+  transform: scale(1.5);
 }
 
 .display-container {
@@ -81,19 +81,19 @@ body {
   bottom: 0;
   background-color: var(--withe);
   z-index: 2;
-  overflow:auto;
+  overflow: auto;
 }
 .gallery {
   margin: 5px;
   float: left;
   width: 24%;
 }
-.gallery:hover{
-	transform: scale(1.02);
+.gallery:hover {
+  transform: scale(1.02);
 }
 .gallery img {
-	border: 1px solid var(--foreground);
-	border-radius: 12px;
+  border: 1px solid var(--foreground);
+  border-radius: 12px;
   display: block;
   width: 100%;
   height: auto;
