@@ -2,7 +2,7 @@
 body {
   font-family: Arimo, sans-serif;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.25em;
   font-weight: normal;
 }
 
@@ -10,9 +10,10 @@ h1,
 h2 {
   font-size: 1em;
   font-weight: 700;
+  line-height: 1.4em
 }
 h1 {
-  margin: 16px 25px 16px 25px;
+  margin:20px;
 }
 h2,
 p {
@@ -24,7 +25,7 @@ body {
   background-color: var(--withe);
 }
 .btn {
-  margin: 10px 10px 20px 10px;
+  margin: 20px;
   padding: 13px;
 }
 .btn img {
@@ -82,6 +83,14 @@ body {
   background-color: var(--withe);
   z-index: 2;
   overflow: auto;
+}
+.container-centert{
+  max-width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .gallery {
   margin: 5px;
