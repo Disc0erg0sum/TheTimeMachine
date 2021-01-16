@@ -13,8 +13,8 @@ function setup() {
   //numw = windowWidth/80;
   //numh = windowHeight/80;
 
-  numw = 50;
-  numh = 50;
+  numw = 100;
+  numh = 100;
 
   /*rectMode(CENTER);
   bg = createGraphics(width, height);
