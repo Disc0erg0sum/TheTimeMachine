@@ -9,9 +9,7 @@ var pages=[
 "clocks/clock1/index.html",
 "clocks/clock2/index.html",
 "clocks/clock3/index.html",
-"clocks/clock4/index.html",
-"clocks/clock5/index.html",
-"clocks/clock6/index.html"];
+"clocks/clock4/index.html"];
 
 var len = pages.length;
 var random_num = Math.floor(Math.random() * len);
