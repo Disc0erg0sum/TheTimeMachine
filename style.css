@@ -2,15 +2,15 @@
 body {
   font-family: Arimo, sans-serif;
   font-size: 24px;
-  line-height: 1.25em;
+  line-height: 1.25rem;
   font-weight: normal;
 }
 
 h1,
 h2 {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.4em
+  line-height: 1.4rem
 }
 h1 {
   margin:20px;
@@ -84,26 +84,28 @@ body {
   z-index: 2;
   overflow: auto;
 }
-.container-centert{
-  max-width: 900px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.overlay-container{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+  
 }
-.gallery {
+.gallery-container{
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+}
+.gallery-itm {
   margin: 5px;
-  float: left;
-  width: 24%;
 }
-.gallery:hover {
+.gallery-itm:hover {
   transform: scale(1.02);
 }
-.gallery img {
+.gallery-itm img {
   border: 1px solid var(--foreground);
   border-radius: 12px;
-  display: block;
   width: 100%;
   height: auto;
 }
