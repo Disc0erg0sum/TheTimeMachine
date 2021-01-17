@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  background(245);
+  background("#f9faff");
   showHour();
   showMin();
   showSec();

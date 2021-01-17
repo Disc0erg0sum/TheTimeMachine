@@ -12,7 +12,7 @@ function windowResized(){
 function setup() {
 	pixelDensity(displayDensity());
 	createCanvas(windowWidth, windowHeight);
-	background(245);
+	background("#f9faff");
 
   for (let i = 0; i < 25; i++){
   	minrings[i] = new Treering();
@@ -36,7 +36,7 @@ function setup() {
 }
 
 function draw() { 
-	background(245);
+	background("#f9faff");
   randomSeed(1);
 
   minscl = min(windowWidth,windowHeight)/40;

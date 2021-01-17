@@ -5,11 +5,11 @@ function windowResized(){
 function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
-  background(245);
+  background("#f9faff");
 }
 
 function draw() {
-  background(245);
+  background("#f9faff");
 
   let mil = map(millis()%1000,0,1000,0,windowWidth);
   let sec = map(second(),0,60,0,windowWidth);

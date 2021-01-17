@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(245);
+  background("#f9faff");
   rectMode(CENTER);
   draw_sec(second());
   draw_min(minute());

@@ -6,7 +6,7 @@ function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
   smooth();
-  background(245);
+  background("#f9faff");
   angleMode(DEGREES);
   frameRate(3);
 }

@@ -10,7 +10,7 @@ function setup() {
 }
   
 function draw() {
-  background(245);
+  background("#f9faff");
   updateTime();
   text(hours, 50, 50);
   text(min, 50,60);

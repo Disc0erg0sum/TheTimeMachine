@@ -5,13 +5,13 @@ function windowResized(){
 function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
-  background(245);
+  background("#f9faff");
 
   textFont('Noto Sans JP');
 }
 
 function draw() {
-  background(245);
+  background("#f9faff");
 
 
   let s = map(second(),0,60,0,TWO_PI) - HALF_PI;

@@ -26,8 +26,10 @@ h2 {
   line-height: 29px;
 }
 h1 {
-  margin:20px;
+  margin:30px;
+  padding-left: 8px;
 }
+
 h2,
 p {
   margin: 0;
@@ -115,7 +117,8 @@ body {
   max-width: 700px;
   display: grid;
   grid-template-columns: auto auto auto ;
-  gap: 8px;
+  gap: 24px;
+  padding: 40px;
 }
 
 .gallery img {

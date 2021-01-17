@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background(245);
+  background("#f9faff");
   clockGerman.update();
   clockBerlin.update();
   clockBremen.update();

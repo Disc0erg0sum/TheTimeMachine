@@ -14,7 +14,7 @@ function setup() {
 };
 
 function draw() {
-  background(245);
+  background("#f9faff");
   sec = second();
   min = minute();
   h = hour() % 12;
@@ -28,7 +28,7 @@ function draw() {
 function makeClockBase() {
   translate(width / 2, height / 2);
   ellipseMode(CENTER);
-  fill(245);
+  fill("#f9faff");
   ellipse(0, 0, 500, 500);
 };
 

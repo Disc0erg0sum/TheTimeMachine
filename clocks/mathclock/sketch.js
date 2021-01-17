@@ -118,7 +118,7 @@ function setup() {
 
   updateArray();
 
-  background(245);
+  background("#f9faff");
 }
 
 
@@ -128,7 +128,7 @@ function draw(){
     updateArray();
   }
 
-  background(245);
+  background("#f9faff");
   fill(cols[colIndex]);
 
   let ts = min(windowWidth,windowHeight)*0.25;

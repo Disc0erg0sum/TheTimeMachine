@@ -8,7 +8,7 @@ function windowResized(){
 function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
-  background(245);
+  background("#f9faff");
 
   //numw = windowWidth/80;
   //numh = windowHeight/80;
@@ -31,7 +31,7 @@ function setup() {
 }
 
 function draw() {
-  background(245);
+  background("#f9faff");
 
   let s = map(second(),0,60,0,height);
   let m = map(minute(),0,60,0,height);
