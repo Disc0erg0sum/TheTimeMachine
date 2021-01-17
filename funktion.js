@@ -1,6 +1,11 @@
 // jQuery
 
 $(document).ready(function(){
+    // close btn
+    $(".close-btn").click(function () { 
+        $(".hidden").hide(); 
+    });
+    
     //about
     $("#about_btn").click(function () { 
         $("#about").show();
@@ -12,11 +17,6 @@ $(document).ready(function(){
         $("#grid").show();
         $("#about").hide();
     });
-
-    $(".close-btn").click(function () { 
-        $(".hidden").hide(); 
-    });
-
     $("#c1").click(function () { 
         $("iframe").attr("src", "clocks/mathclock/index.html");
         $(".hidden").hide(); 
