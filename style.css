@@ -57,6 +57,17 @@ body {
   right: 0;
 }
 
+#grid_btn{
+  width: 22px;
+  margin-top: 36px;
+
+}
+
+#about_btn{
+  width: 24px;
+  
+}
+
 .blur{
   margin: 26px 0px 0px 20px;
 
