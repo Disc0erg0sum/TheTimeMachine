@@ -26,9 +26,8 @@ h2 {
   line-height: 29px;
 }
 h1 {
-  font-size: 28px;
+  font-size: 24px;
   margin:30px;
-  padding-left: 8px;
 }
 
 h2,
@@ -42,7 +41,6 @@ body {
 }
 .btn {
   margin: 30px;
-  margin-left: 13px;
 }
 .btn img {
   display: block;
@@ -60,9 +58,9 @@ body {
 }
 
 .blur{
-  margin:30px;
+  margin: 26px 0px 0px 20px;
 
-  width: 168px;
+  width: 150px;
   height: 40px;
 
   background: var(--white);
@@ -131,7 +129,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto ;
   gap: 24px;
-  padding: 40px;
+  margin: 0px 40px;
 }
 
 .gallery img {
