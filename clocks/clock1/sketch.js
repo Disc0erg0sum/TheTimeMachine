@@ -53,6 +53,6 @@ function draw_hour(h) {
 
 class rec{
   constructor(x,y,w,time){
-    this.
+    this.x = x;
   }
 }
