@@ -69,12 +69,7 @@ body {
 }
 
 .blur{
-  margin: 26px 0px 0px 20px;
-
-  width: 150px;
-  height: 40px;
-
-  background: var(--white);
+  background: #000;
   position: absolute;
   z-index: -1;
   filter: blur(11px);
@@ -162,7 +157,7 @@ body {
   height: 100vh;
   left: 0px;
   top: 0px;
-  z-index: -1;
+  z-index: -10;
 }
 #iframe_div iframe {
   width: 100%;
