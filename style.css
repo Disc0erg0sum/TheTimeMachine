@@ -26,6 +26,7 @@ h2 {
   line-height: 29px;
 }
 h1 {
+  font-size: 28px;
   margin:30px;
   padding-left: 8px;
 }
@@ -37,11 +38,11 @@ p {
 /* layout */
 body {
   overflow: hidden;
-  background-color: var(--withe);
+  background-color: var(--white);
 }
 .btn {
-  margin: 20px;
-  padding: 13px;
+  margin: 30px;
+  margin-left: 13px;
 }
 .btn img {
   display: block;
@@ -56,6 +57,18 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.blur{
+  margin:30px;
+
+  width: 168px;
+  height: 40px;
+
+  background: var(--white);
+  position: absolute;
+  z-index: -1;
+  filter: blur(11px);
 }
 
 .display-container {
@@ -89,8 +102,8 @@ body {
   padding: 1.5em 1.8em 2.3em 1.8em;
   border-radius: 12px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  background-color: var(--withe);
-  max-width: 60ch;
+  background-color: var(--white);
+  max-width: 100ch;
 }
 
 .overlay {
@@ -102,7 +115,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--withe);
+  background-color: var(--white);
   z-index: 2;
   overflow: auto;
 }
@@ -149,6 +162,6 @@ body {
 }
 /* color */
 :root {
-  --withe: #f9faff;
+  --white: #f9faff;
   --foreground: #283d59;
 }
