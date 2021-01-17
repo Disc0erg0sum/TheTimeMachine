@@ -50,3 +50,9 @@ function draw_hour(h) {
   square(0, 0, mag(h, 0, 23, 0, 59));
   pop();
 }
+
+class rec{
+  constructor(x,y,w,time){
+    this.
+  }
+}
