@@ -13,7 +13,7 @@ $(document).ready(function(){
         $("#about").hide();
     });
 
-    $(".close").click(function () { 
+    $(".close-btn").click(function () { 
         $(".hidden").hide(); 
     });
 
