@@ -8,7 +8,7 @@ function setup() {
   smooth();
   background("#f9faff");
   angleMode(DEGREES);
-  frameRate(3);
+  frameRate(2);
 }
 
 function draw() {

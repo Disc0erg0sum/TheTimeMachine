@@ -2,6 +2,7 @@ function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
   smooth();
+  frameRate(2);
 }
 
 function draw() {
