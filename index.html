@@ -24,34 +24,39 @@
     <!-- content -->
     <div class="display-container">
       <div id="main">
+        <div class="blur display-topleft"></div>
         <div class="display-topleft">
-          <!--div class="blur" style="width:150px; height:40px; margin: 26px 0px 0px 20px;"></div-->
           <h1>Zeitmaschine</h1>
         </div>
-
         <div id="grid_btn" class="btn display-topright">
-          <img src="img/grid_icn.png" alt="Gallerie" />
+          <img src="img/grid_icn_blur.png" alt="Gallerie" />
         </div>
-        <div id="about_btn" class="btn display-bottomright">
-          <img src="img/about_icn.png" alt="Info" />
+        <div id="about_btn" class="btn display-bottomright big-icn">
+          <img src="img/about_icn_blur.png" alt="Info" />
         </div>
       </div>
     </div>
     <!-- about -->
     <div id="about" class="display-middle card hidden">
       <div class="w3-padding">
-        <h2>About</h2>
+        <h2>Info</h2>
+        <br>
         <p>
           This is a project created by Pascal Struck and Jendrik Bradaczek as
           part of the course „Zeitmaschine“ by Prof. Boris Müller at the
           University of Applied Sciences Potsdam during the winter semester
           20/21.
         </p>
-        <button class="close-btn btn">close</button>
+        <div class="close-btn btn small-icn">
+          <img src="img/close_icn.png" alt="close" />
+        </div>
       </div>
     </div>
     <!-- grid -->
     <div id="grid" class="overlay hidden">
+      <div class="close-btn btn big-icn" style="margin: 34px 28px 0px 0px">
+        <img src="img/close_icn.png" alt="close" />
+      </div>
       <div class="overlay-container">
         <div class="gallery">
             <img id="c1" src="img/mathclock.png" alt="" />

@@ -13,8 +13,8 @@ function setup() {
   //numw = windowWidth/80;
   //numh = windowHeight/80;
 
-  numw = 100;
-  numh = 100;
+  numw = 115;
+  numh = 115;
 
   /*rectMode(CENTER);
   bg = createGraphics(width, height);
@@ -31,6 +31,10 @@ function setup() {
 }
 
 function draw() {
+
+  //numw = min(width,height)/6;
+  //numh = min(width,height)/6;
+
   background("#f9faff");
 
   let s = map(second(),0,60,0,height);
