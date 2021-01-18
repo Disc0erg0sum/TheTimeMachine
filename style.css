@@ -62,11 +62,14 @@ body {
 
 #grid_btn{
   width: 40px;
-  margin-top: 25px;
+  margin-top: 26px;
+  margin-right: 20px;
 }
 
 #about_btn{
   width: 40px;
+  margin-right: 20px;
+
 }
 
 .small-icn{
