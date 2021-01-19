@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     // grid
     $("#grid_btn").click(function () { 
-        $("#grid").slideDown();
+        $("#grid").slideDown(450);
         $("#about").hide();
     });
     $("#c1").click(function () { 
