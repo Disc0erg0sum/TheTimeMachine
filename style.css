@@ -35,6 +35,11 @@ p {
   margin: 0;
 }
 
+i{
+  color: var(--accent);
+  font-size: 14px;
+}
+
 /* layout */
 body {
   overflow: auto;
@@ -184,6 +189,7 @@ body {
 :root {
   --white: #f9faff;
   --foreground: #283d59;
+  --accent: #566579;
 }
 
 /*responsive*/
