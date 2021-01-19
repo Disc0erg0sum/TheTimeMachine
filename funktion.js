@@ -3,18 +3,18 @@
 $(document).ready(function(){
     // close btn
     $(".close-btn").click(function () { 
-        $(".hidden").hide(); 
+        $(".hidden").slideUp(300); 
     });
     
     //about
     $("#about_btn").click(function () { 
-        $("#about").show();
+        $("#about").fadeIn(200);
         $("#grid").hide();
     });
 
     // grid
     $("#grid_btn").click(function () { 
-        $("#grid").show();
+        $("#grid").slideDown();
         $("#about").hide();
     });
     $("#c1").click(function () { 
