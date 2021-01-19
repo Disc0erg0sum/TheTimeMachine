@@ -3,7 +3,7 @@
 $(document).ready(function(){
     // close btn
     $(".close-btn").click(function () { 
-        $(".hidden").slideUp(300); 
+        $(".hidden").slideUp('swing'); 
     });
     
     //about
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     // grid
     $("#grid_btn").click(function () { 
-        $("#grid").slideDown(450);
+        $("#grid").slideDown('swing');
         $("#about").hide();
     });
     $("#c1").click(function () { 
