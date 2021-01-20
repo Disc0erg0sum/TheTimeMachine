@@ -107,11 +107,11 @@ class Clock {
     push();
     translate(this.posX, this.posY);
     rectMode(CENTER)
-    fill("#1F2417");
-    stroke("#1F2417");
-    rect(this.clockW/2, this.h + this.divH, this.clockW,this.clockH/20);
     fill("#877426");
     stroke("#877426");
+    rect(this.clockW/2, this.h + this.divH, this.clockW,this.clockH/20);
+    fill("#706A69");
+    stroke("#706A69");
     rect(this.clockW/2, this.min + this.divMin, this.clockW,this.clockH/250);
     fill("#301B26");
     stroke("#301B26");
