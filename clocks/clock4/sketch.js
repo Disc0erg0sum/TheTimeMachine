@@ -119,7 +119,11 @@ class Clock {
     
     fill("#301B26");
     noStroke();
-    textSize(24);
+    if (windowWidth <769){
+      textSize(16);
+    } else {
+      textSize(24);
+    }
     text(this.local, 14, this.sec + this.divSec-this.clockH/300);
     pop();
   }
