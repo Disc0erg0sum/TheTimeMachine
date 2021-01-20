@@ -107,20 +107,20 @@ class Clock {
     push();
     translate(this.posX, this.posY);
     rectMode(CENTER)
-    fill("#32585E");
-    stroke("#32585E");
-    rect(this.clockW/2, this.h + this.divH, this.clockW,this.clockH/60);
-    fill("#1f808f");
-    stroke("#1f808f");
+    fill("#1F2417");
+    stroke("#1F2417");
+    rect(this.clockW/2, this.h + this.divH, this.clockW,this.clockH/20);
+    fill("#877426");
+    stroke("#877426");
     rect(this.clockW/2, this.min + this.divMin, this.clockW,this.clockH/250);
-    fill("#26c5de");
-    stroke("#26c5de");
+    fill("#301B26");
+    stroke("#301B26");
     rect(this.clockW/2, this.sec + this.divSec, this.clockW,this.clockH/1000);
     
-    fill("#26c5de");
+    fill("#301B26");
     noStroke();
-    textSize(18);
-    text(this.local, this.clockH/300, this.sec + this.divSec-this.clockH/300);
+    textSize(24);
+    text(this.local, 14, this.sec + this.divSec-this.clockH/300);
     pop();
   }
 }
