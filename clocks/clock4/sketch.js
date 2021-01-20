@@ -1,5 +1,36 @@
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  clockKoeln = new Clock(width / 4, height, 0, 0, 0, -26, -11, "Köln");
+  clockHannover = new Clock(
+    width / 4,
+    height,
+    width / 4,
+    0,
+    0,
+    -21,
+    -3,
+    "Hanover"
+  );
+  clockMuenchen = new Clock(
+    width / 4,
+    height,
+    (width / 4) * 2,
+    0,
+    0,
+    -14,
+    18,
+    "München"
+  );
+  clockBerlin = new Clock(
+    width / 4,
+    height,
+    (width / 4) * 3,
+    0,
+    0,
+    -7,
+    38,
+    "Berlin"
+  );
 }
 
 function setup() {
@@ -7,50 +38,51 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   smooth();
   frameRate(2);
-  clockGerman = new Clock(width / 4, height, 0, 0, 0, 0, 0, "Germany");
-  clockBerlin = new Clock(
+  textFont('Crete Round');
+  clockKoeln = new Clock(width / 4, height, 0, 0, 0, -26, -11, "Köln");
+  clockHannover = new Clock(
     width / 4,
     height,
     width / 4,
     0,
     0,
-    -6,
-    -22,
-    "Berlin"
+    -21,
+    -3,
+    "Hanover"
   );
-  clockBremen = new Clock(
+  clockMuenchen = new Clock(
     width / 4,
     height,
     (width / 4) * 2,
     0,
     0,
-    -24,
-    -46,
-    "Bremen"
+    -14,
+    18,
+    "München"
   );
-  clockWien = new Clock(
+  clockBerlin = new Clock(
     width / 4,
     height,
     (width / 4) * 3,
     0,
     0,
-    5,
-    30,
-    "Wien"
+    -7,
+    38,
+    "Berlin"
   );
 }
 
 function draw() {
   background("#f9faff");
-  clockGerman.update();
+  clockKoeln.update();
+  clockHannover.update();
+  clockMuenchen.update();
   clockBerlin.update();
-  clockBremen.update();
-  clockWien.update();
 
-  clockGerman.show();
+  clockKoeln.show();
+  clockHannover.show();
+  clockMuenchen.show();
   clockBerlin.show();
-  clockBremen.show();
-  clockWien.show();
 }
 
 class Clock {
@@ -75,20 +107,20 @@ class Clock {
     push();
     translate(this.posX, this.posY);
     rectMode(CENTER)
-    fill(27, 34, 38);
-    stroke(27, 34, 38);
-    rect(this.clockW/2, this.h + this.divH, this.clockW,this.clockH/8);
-    fill(62, 81, 89);
-    stroke(62, 81, 89);
-    rect(this.clockW/2, this.min + this.divMin, this.clockW,this.clockH/60);
-    fill(100, 129, 140);
-    stroke(100, 129, 140);
-    rect(this.clockW/2, this.sec + this.divSec, this.clockW,this.clockH/120);
+    fill("#32585E");
+    stroke("#32585E");
+    rect(this.clockW/2, this.h + this.divH, this.clockW,this.clockH/60);
+    fill("#1f808f");
+    stroke("#1f808f");
+    rect(this.clockW/2, this.min + this.divMin, this.clockW,this.clockH/250);
+    fill("#26c5de");
+    stroke("#26c5de");
+    rect(this.clockW/2, this.sec + this.divSec, this.clockW,this.clockH/1000);
     
-    fill(153, 184, 191);
+    fill("#26c5de");
     noStroke();
     textSize(18);
-    text(this.local, this.clockH/120, this.sec + this.divSec-this.clockH/120);
+    text(this.local, this.clockH/300, this.sec + this.divSec-this.clockH/300);
     pop();
   }
 }
