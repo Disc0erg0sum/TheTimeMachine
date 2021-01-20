@@ -81,6 +81,8 @@ class squr {
     stroke(this.c);
     rectMode(CENTER);
     square(0, 0, this.d * this.t);
+    //ellipseMode(CENTER);
+    //ellipse(0,0, this.d * this.t);
     pop();
   }
 }
