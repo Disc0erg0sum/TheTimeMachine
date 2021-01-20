@@ -11,8 +11,13 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   smooth();
   frameRate(2);
-
-  init_pattern(25, 40);
+  let d;
+  if (width > height) {
+    d = height / 30;
+  } else {
+    d = width / 30;
+  }
+  init_pattern(width / d + 1, height / d + 1, d);
 }
 
 function draw() {
@@ -26,15 +31,26 @@ function draw() {
   }
 }
 
-function init_pattern(x, y) {
-  let d = 50;
+function init_pattern(x, y, d) {
   for (let i = 0; i < x; i++) {
-    time_j = [0, 1, 2];
+    let time_j = [0, 1, 2];
     pat[i] = [];
     time_i[i] = [];
     for (let j = 0; j < y; j++) {
-      pat[i][j] = new squr(i * d, j * d, d, color(50));
       time_i[i][j] = random(time_j);
+      let c;
+      switch (time_i[i][j]) {
+        case 0:
+          c = color(100, 129, 140);
+          break;
+        case 1:
+          c = color(62, 81, 89);
+          break;
+        default:
+          c = color(27, 34, 38);
+          break;
+      }
+      pat[i][j] = new squr(i * d, j * d, d, c);
     }
   }
 }
@@ -62,7 +78,8 @@ class squr {
     push();
     translate(this.x, this.y);
     fill(this.c);
-    strokeWeight(0);
+    stroke(this.c);
+    rectMode(CENTER);
     square(0, 0, this.d * this.t);
     pop();
   }
