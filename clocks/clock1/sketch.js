@@ -4,6 +4,13 @@ let pat = [];
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  let d;
+  if (width > height) {
+    d = height / 25;
+  } else {
+    d = width / 25;
+  }
+  init_pattern(width / d + 1, height / d + 1, d);
 }
 
 function setup() {
@@ -13,9 +20,9 @@ function setup() {
   frameRate(2);
   let d;
   if (width > height) {
-    d = height / 30;
+    d = height / 25;
   } else {
-    d = width / 30;
+    d = width / 25;
   }
   init_pattern(width / d + 1, height / d + 1, d);
 }
@@ -41,13 +48,13 @@ function init_pattern(x, y, d) {
       let c;
       switch (time_i[i][j]) {
         case 0:
-          c = color(100, 129, 140);
+          c = color(193,213,232);
           break;
         case 1:
-          c = color(62, 81, 89);
+          c = color(92,115,150);
           break;
         default:
-          c = color(27, 34, 38);
+          c = color(76,88,101);
           break;
       }
       pat[i][j] = new squr(i * d, j * d, d, c);
