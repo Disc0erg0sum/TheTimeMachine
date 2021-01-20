@@ -45,7 +45,6 @@ function draw() {
   print(m);
   h = hour() % 12;
 
-  /*/bg
   push();
   translate(width / 2 - h_handel * d, height / 2 - (h_handel * d) / 2);
   ClockBase();
@@ -74,13 +73,12 @@ function draw() {
   push();
   translate(width / 2 + h_handel * d, height / 2 + (h_handel * d) / 2);
   ClockBase();
-  pop();*/
+  pop();
 
 
   // clock 1
   push();
   translate(width / 2 - h_handel * d, height / 2 - (h_handel * d) / 2);
-  ClockBase();
   showHouerHand(0);
   showMinHand(h_handel);
   showSecHand(m_handel);
@@ -89,7 +87,6 @@ function draw() {
   // clock 2
   push();
   translate(width / 2 - h_handel * d, height / 2 + (h_handel * d) / 2);
-  ClockBase();
   showHouerHand(0);
   showSecHand(h_handel);
   showMinHand(s_handel);
@@ -98,7 +95,6 @@ function draw() {
   // clock 3
   push();
   translate(width / 2, height / 2 - (h_handel * d) / 2);
-  ClockBase();
   showMinHand(0);
   showHouerHand(m_handel);
   showSecHand(h_handel);
@@ -107,7 +103,6 @@ function draw() {
   // clock 4
   push();
   translate(width / 2, height / 2 + (h_handel * d) / 2);
-  ClockBase();
   showMinHand(0);
   showSecHand(m_handel);
   showHouerHand(s_handel);
@@ -116,7 +111,6 @@ function draw() {
   // clock 5
   push();
   translate(width / 2 + h_handel * d, height / 2 - (h_handel * d) / 2);
-  ClockBase();
   showSecHand(0);
   showMinHand(s_handel);
   showHouerHand(m_handel);
@@ -125,7 +119,6 @@ function draw() {
   // clock 6
   push();
   translate(width / 2 + h_handel * d, height / 2 + (h_handel * d) / 2);
-  ClockBase();
   showSecHand(0);
   showHouerHand(s_handel);
   showMinHand(h_handel);
@@ -135,9 +128,7 @@ function draw() {
 function ClockBase() {
   ellipseMode(CENTER);
   noFill();
-  stroke(153, 184, 191);
-  //noStroke()
-  //fill("#ecebf3");
+  stroke(219,214,213);
   if (width > height) {
     ellipse(0, 0, h_handel * 2 + height / 40, h_handel * 2 + height / 40);
   } else {
@@ -150,7 +141,7 @@ function showSecHand(offset) {
   rotate(radians(-90));
   angel = map(s, 0, 60, 0, 360);
   rotate(radians(angel));
-  stroke(100, 129, 140);
+  stroke(189,11,11);
   strokeWeight(2);
   line(0, 0, s_handel, 0);
 }
@@ -160,7 +151,7 @@ function showMinHand(offset) {
   rotate(radians(-90));
   angel = map(m, 0, 60, 0, 360);
   rotate(radians(angel));
-  stroke(62, 81, 89);
+  stroke(113,110,109);
   strokeWeight(4);
   line(0, 0, m_handel, 0);
 }
@@ -170,7 +161,7 @@ function showHouerHand(offset) {
   rotate(radians(-90));
   angel = map(h, 0, 12, 0, 360);
   rotate(radians(angel));
-  stroke(27, 34, 38);
+  stroke(55,53,53);
   strokeWeight(6);
   line(0, 0, h_handel, 0);
 }
