@@ -114,7 +114,7 @@ function setup() {
   textFont('Titillium Web');
 
   //cols = [color(255,100,100),color(45,150,19),color(245,150,198),color(24,150,15),color(80,85,90)];
-  cols = [color('#E4CEF2'),color('#E36A2E'),color('#CF2C34'),color('#74184C'),color('#465C85')];
+  cols = [color('#E36A2E'),color('#CF2C34'),color('#74184C'),color('#465C85')];
 
   updateArray();
 

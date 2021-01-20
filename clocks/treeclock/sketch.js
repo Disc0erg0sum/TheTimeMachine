@@ -13,6 +13,7 @@ function setup() {
 	pixelDensity(displayDensity());
 	createCanvas(windowWidth, windowHeight);
 	background("#f9faff");
+	frameRate(3);
 
   for (let i = 0; i < 25; i++){
   	minrings[i] = new Treering();

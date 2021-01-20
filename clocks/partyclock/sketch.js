@@ -9,6 +9,7 @@ function setup() {
   pixelDensity(displayDensity());
   createCanvas(windowWidth, windowHeight);
   background("#f9faff");
+  frameRate(3);
 
   //numw = windowWidth/80;
   //numh = windowHeight/80;
