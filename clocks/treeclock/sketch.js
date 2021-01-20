@@ -27,7 +27,7 @@ function setup() {
   rectMode(CENTER);
   bg = createGraphics(windowWidth, windowHeight);
   bg.noStroke();
-  for (let i = 0; i < 300000; i++) {
+  for (let i = 0; i < min(windowWidth,windowHeight)*333; i++) {
   	let x = random(windowWidth);
   	let y = random(windowHeight);
   	let s = noise(x*0.01, y*0.01) + 0.0009*min(windowWidth,windowHeight);
