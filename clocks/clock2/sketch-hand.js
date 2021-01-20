@@ -45,6 +45,38 @@ function draw() {
   print(m);
   h = hour() % 12;
 
+  /*/bg
+  push();
+  translate(width / 2 - h_handel * d, height / 2 - (h_handel * d) / 2);
+  ClockBase();
+  pop();
+
+  push();
+  translate(width / 2 - h_handel * d, height / 2 + (h_handel * d) / 2);
+  ClockBase();
+  pop();
+
+  push();
+  translate(width / 2, height / 2 - (h_handel * d) / 2);
+  ClockBase();
+  pop();
+
+  push();
+  translate(width / 2, height / 2 + (h_handel * d) / 2);
+  ClockBase();
+  pop();
+
+  push();
+  translate(width / 2 + h_handel * d, height / 2 - (h_handel * d) / 2);
+  ClockBase();
+  pop();
+
+  push();
+  translate(width / 2 + h_handel * d, height / 2 + (h_handel * d) / 2);
+  ClockBase();
+  pop();*/
+
+
   // clock 1
   push();
   translate(width / 2 - h_handel * d, height / 2 - (h_handel * d) / 2);
@@ -104,6 +136,8 @@ function ClockBase() {
   ellipseMode(CENTER);
   noFill();
   stroke(153, 184, 191);
+  //noStroke()
+  //fill("#ecebf3");
   if (width > height) {
     ellipse(0, 0, h_handel * 2 + height / 40, h_handel * 2 + height / 40);
   } else {
