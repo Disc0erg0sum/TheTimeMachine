@@ -48,13 +48,13 @@ function init_pattern(x, y, d) {
       let c;
       switch (time_i[i][j]) {
         case 0:
-          c = color(193,213,232);
+          c = color(1, 2, 3);
           break;
         case 1:
-          c = color(92,115,150);
+          c = color(20, 28, 36);
           break;
         default:
-          c = color(76,88,101);
+          c = color(13, 38, 64);
           break;
       }
       pat[i][j] = new squr(i * d, j * d, d, c);
