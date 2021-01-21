@@ -48,7 +48,7 @@ function setup() {
     0,
     -21,
     -3,
-    "Hanover"
+    "Hannover"
   );
   clockMuenchen = new Clock(
     width / 4,
