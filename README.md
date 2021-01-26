@@ -2,7 +2,7 @@
 
 [the Website](https://disc0erg0sum.github.io/TheTimeMachine/)
 
-## code of conduct
+## Code of Conduct
 
 1. Don't panic!
 
@@ -10,7 +10,7 @@
 
 3. Easter Eggs are welcome!
 
-## dependencies
+## Dependencies
 
 - p5.js
 - jQuery
