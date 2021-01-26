@@ -14,12 +14,9 @@ function setup() {
 function draw() {
   background("#f9faff");
 
-
   let s = map(second(),0,60,0,TWO_PI) - HALF_PI;
   let m = map(minute(),0,60,0,TWO_PI) - HALF_PI;
   let h = map(hour(),0,24,0,TWO_PI*2) - HALF_PI;
-
-  //text(h,200,200);
 
   let hjap = hour()+8;
   hjap % 23; 
@@ -33,7 +30,6 @@ function draw() {
   let mnep = minute()+45;
   mnep % 59;
   let m45 = map(mnep,0,60,0,TWO_PI) - HALF_PI;
-
 
   //japan
   push();
@@ -87,11 +83,9 @@ function draw() {
   pop();
 }
 
-
 function drawWatch(x,y,num,radius,txt){
   push();
   translate(x,y);
-  //rectMode(RADIUS);
   for (let a = 0; a < num; a += 1) {
     let angle = radians(TWO_PI);
     let x = cos(angle) * radius;
@@ -104,5 +98,4 @@ function drawWatch(x,y,num,radius,txt){
     pop();
   }
   pop();
-
 }

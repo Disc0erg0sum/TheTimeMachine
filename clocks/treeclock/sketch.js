@@ -2,7 +2,6 @@ let minrings = [];
 let rings = [];
 
 var minscl = 18;
-
 let bg;
 
 function windowResized(){
@@ -15,9 +14,9 @@ function setup() {
 	background("#f9faff");
 	frameRate(3);
 
-  for (let i = 0; i < 25; i++){
-  	minrings[i] = new Treering();
-  	rings[i] = new Treering();
+	for (let i = 0; i < 25; i++){
+	  	minrings[i] = new Treering();
+	  	rings[i] = new Treering();
   }
 
   drawingContext.shadowOffsetX = 0;
@@ -47,9 +46,8 @@ function draw() {
 
   push();
   translate(windowWidth/2,windowHeight/2);
-
   drawingContext.shadowColor = "#724A1D";
-
+  
   for (let i = 0; i < hour()+1; i++){
   	noStroke()
   	fill(250,230,188,225);
@@ -62,36 +60,9 @@ function draw() {
   	noFill();
   	rings[i].show(minscl+i*minscl, second());
   }
-
   pop();
   image(bg,0,0);
 }
-  
-/*function drawtreering() {
-
-	const vertNum = 10;
-	const radStep = TAU/vertNum;
-	const maxRad = TAU * 2 + radStep * 6;
-	let noiseOffset = 100;
-	const noiseScale = 2;
-	const noiseZ = 5;
-	beginShape();
-	for(let r = 0; r < maxRad; r += radStep){
-		let additionalOffset = r > maxRad/2 ? 0 : 0.01;
-		//if(baseRadius == maxRadius)additionalOffset *= 3;
-		let x = cos(r);
-		let y = sin(r);
-		let nv = noise(x * noiseScale + noiseOffset, y * noiseScale + additionalOffset, noiseZ);
-		let noiseScale2 = map(nv, 0, 1, 0.01, 2);
-		let nv2 = noise(x * noiseScale2 + noiseOffset, y * noiseScale2 , noiseZ);
-		let radiusnoise = map(nv2, 0, 1, 0.5,1);
-		let radius = 100 * radiusnoise;							//radius
-		x *= radius;
-		y *= radius;
-		curveVertex(x,y);
-		}
-	endShape();
-}*/
 
 class Treering {
 
@@ -115,7 +86,7 @@ class Treering {
 			this.noiseScale2 = map(this.nv, 0, 1, 0.01, 2);
 			this.nv2 = noise(this.x * this.noiseScale2 + this.noiseOffset, this.y * this.noiseScale2 , this.noiseZ);
 			this.radiusnoise = map(this.nv2, 0, 1, 0.5,1);
-			this.radius = size * this.radiusnoise;							//radius
+			this.radius = size * this.radiusnoise;
 			this.x *= this.radius;
 			this.y *= this.radius;
 			curveVertex(this.x,this.y);
