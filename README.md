@@ -1,4 +1,4 @@
-# TheTimeMachine
+# Time Machine
 
 [die Webseite](https://disc0erg0sum.github.io/TheTimeMachine/)
 
