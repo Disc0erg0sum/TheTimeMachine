@@ -1,7 +1,5 @@
 # TheTimeMachine
 
-![Time](img/giphy.gif)
-
 [die Webseite](https://disc0erg0sum.github.io/TheTimeMachine/)
 
 ## code of conduct
