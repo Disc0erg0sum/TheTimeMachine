@@ -1,5 +1,8 @@
 # Time Machine
 
+A website regarding the visualization of time and a place where you can find different clocks. 
+Have fun exploring!
+
 [the Website](https://disc0erg0sum.github.io/TheTimeMachine/)
 
 ## Code of Conduct
