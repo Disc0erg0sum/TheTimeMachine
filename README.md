@@ -4,16 +4,15 @@
 
 ## code of conduct
 
-1. Don't panic
+1. Don't panic!
 
-2. Take care of the docs
+2. Feel free to download and experiment with the code. 
 
-3. Keep the Code clean
-
-4. Easter Eggs are welcome!
+3. Easter Eggs are welcome!
 
 ## dependencies
 
-p5.js oder was auch immer...
+- p5.js
+- jQuery
 
 
