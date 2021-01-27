@@ -13,7 +13,7 @@ function draw() {
 
   let mil = map(millis()%1000,0,1000,0,windowWidth);
   let s = map(second(),0,60,0,windowWidth);
-  let m = map(minmute(),0,60,0,windowWidth);
+  let m = map(minute(),0,60,0,windowWidth);
   let h = map(hour(),0,24,0,windowWidth);
 
 
