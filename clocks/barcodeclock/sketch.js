@@ -16,7 +16,6 @@ function draw() {
   let m = map(minute(),0,60,0,windowWidth);
   let h = map(hour(),0,24,0,windowWidth);
 
-
   stroke(27, 34, 38);
   strokeWeight(windowWidth/8);   
   line(h,0,h,height);
@@ -31,4 +30,5 @@ function draw() {
 
   stroke(153, 184, 191);
   strokeWeight(windowWidth/200); 
+  line(mil,0,mil,height);
 }
