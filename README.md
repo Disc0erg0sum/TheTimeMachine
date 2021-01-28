@@ -12,15 +12,15 @@ Have fun exploring!
 
 ### General
 
-1. Don't panic!
+* Don't panic!
 
-2. Feel free to download and experiment with the code. 
+* Feel free to download and experiment with the code. 
 
-3. Easter eggs are welcome!
+* Easter eggs are welcome!
 
 ### Code
 
-1. Time variables are always defined as shown in the following snippet.
+* Time variables are always defined as shown in the following snippet.
 ```
 let h = hour();
 let m = minute();
@@ -28,12 +28,12 @@ let s = second();
 let mil = millis();
 ```
 
-2. General variables are written in **camelCase**.
+* General variables are written in **camelCase**.
 ```
 var hThinkingThisShouldBeCamelCase;
 ```
 
-3. Functions are written in **camelCase**.
+* Functions are written in **camelCase**.
 ```
 function whatTheFuckIsGoingOn(i,d,k){
 	push();
@@ -41,7 +41,7 @@ function whatTheFuckIsGoingOn(i,d,k){
 }
 ```
 
-3. Classes are **capitalized**.
+* Classes are **capitalized**.
 ```
 class Clock {
 	constructor() {
@@ -54,7 +54,7 @@ class Clock {
 
 ## Dependencies
 
-- p5.js
-- jQuery
+* p5.js
+* jQuery
 
 
