@@ -16,7 +16,7 @@ Have fun exploring!
 
 2. Feel free to download and experiment with the code. 
 
-3. Easter Eggs are welcome!
+3. Easter eggs are welcome!
 
 ### Code
 
