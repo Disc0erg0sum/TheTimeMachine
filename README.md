@@ -44,10 +44,8 @@ function whatTheFuckIsGoingOn(i,d,k){
 3. Classes are **capitalized**.
 ```
 class Clock {
-
 	constructor() {
 	}
-
 	yeet(){
 	}
 }
