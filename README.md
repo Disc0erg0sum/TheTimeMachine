@@ -20,7 +20,7 @@ Have fun exploring!
 
 ### Code
 
-* Time variables are always defined as shown in the following snippet.
+* *Time variables* are always defined as shown in the following snippet.
 ```
 let h = hour();
 let m = minute();
@@ -28,12 +28,12 @@ let s = second();
 let mil = millis();
 ```
 
-* General variables are written in **camelCase**.
+* General *variables* are written in **camelCase**.
 ```
 var hThinkingThisShouldBeCamelCase;
 ```
 
-* Functions are written in **camelCase**.
+* *Functions* are written in **camelCase**.
 ```
 function whatTheFuckIsGoingOn(i,d,k){
 	push();
@@ -41,7 +41,7 @@ function whatTheFuckIsGoingOn(i,d,k){
 }
 ```
 
-* Classes are **capitalized**.
+* *Classes* are **capitalized**.
 ```
 class Clock {
 	constructor() {
@@ -50,7 +50,6 @@ class Clock {
 	}
 }
 ```
-
 
 ## Dependencies
 
