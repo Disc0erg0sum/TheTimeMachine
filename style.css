@@ -42,6 +42,10 @@ i{
   font-size: 14px;
 }
 
+a{
+  color: var(--accent);
+}
+
 /* layout */
 body {
   overflow: auto;
