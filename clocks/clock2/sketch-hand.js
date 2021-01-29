@@ -47,32 +47,32 @@ function draw() {
 
   push();
   translate(width / 2 - h_handel * d, height / 2 - (h_handel * d) / 2);
-  ClockBase();
+  clockBase();
   pop();
 
   push();
   translate(width / 2 - h_handel * d, height / 2 + (h_handel * d) / 2);
-  ClockBase();
+  clockBase();
   pop();
 
   push();
   translate(width / 2, height / 2 - (h_handel * d) / 2);
-  ClockBase();
+  clockBase();
   pop();
 
   push();
   translate(width / 2, height / 2 + (h_handel * d) / 2);
-  ClockBase();
+  clockBase();
   pop();
 
   push();
   translate(width / 2 + h_handel * d, height / 2 - (h_handel * d) / 2);
-  ClockBase();
+  clockBase();
   pop();
 
   push();
   translate(width / 2 + h_handel * d, height / 2 + (h_handel * d) / 2);
-  ClockBase();
+  clockBase();
   pop();
 
 
@@ -125,7 +125,7 @@ function draw() {
   pop();
 }
 
-function ClockBase() {
+function clockBase() {
   ellipseMode(CENTER);
   noFill();
   stroke(219,214,213);

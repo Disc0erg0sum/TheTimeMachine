@@ -10,7 +10,7 @@ function windowResized() {
   } else {
     d = width / 25;
   }
-  init_pattern(width / d + 1, height / d + 1, d);
+  initPattern(width / d + 1, height / d + 1, d);
 }
 
 function setup() {
@@ -24,12 +24,12 @@ function setup() {
   } else {
     d = width / 25;
   }
-  init_pattern(width / d + 1, height / d + 1, d);
+  initPattern(width / d + 1, height / d + 1, d);
 }
 
 function draw() {
   background("#f9faff");
-  nrom_time();
+  nromTime();
   for (let i = 0; i < pat.length; i++) {
     for (let j = 0; j < pat[i].length; j++) {
       pat[i][j].update(time[time_i[i][j]]);
@@ -38,7 +38,7 @@ function draw() {
   }
 }
 
-function init_pattern(x, y, d) {
+function initPattern(x, y, d) {
   for (let i = 0; i < x; i++) {
     let time_j = [0, 1, 2];
     pat[i] = [];
@@ -62,7 +62,7 @@ function init_pattern(x, y, d) {
   }
 }
 
-function nrom_time() {
+function nromTime() {
   time[0] = second() / 59;
   time[1] = minute() / 59;
   time[2] = hour() / 23;
@@ -88,8 +88,6 @@ class squr {
     stroke(this.c);
     rectMode(CENTER);
     square(0, 0, this.d * this.t);
-    //ellipseMode(CENTER);
-    //ellipse(0,0, this.d * this.t);
     pop();
   }
 }

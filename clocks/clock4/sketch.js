@@ -86,14 +86,14 @@ function draw() {
 }
 
 class Clock {
-  constructor(clockW, clockH, posX, posY, divH, divMin, divSec, local) {
+  constructor(clockW, clockH, posX, posY, divH, divM, divS, local) {
     this.clockW = clockW;
     this.clockH = clockH;
     this.posX = posX;
     this.posY = posY;
     this.divH = divH;
-    this.divMin = divMin;
-    this.divSec = divSec;
+    this.divM = divM;
+    this.divS = divS;
     this.local = local;
   }
 
@@ -112,10 +112,10 @@ class Clock {
     rect(this.clockW/2, this.h + this.divH, this.clockW,this.clockH/10);
     fill("#706A69");
     stroke("#706A69");
-    rect(this.clockW/2, this.min + this.divMin, this.clockW,this.clockH/200);
+    rect(this.clockW/2, this.min + this.divM, this.clockW,this.clockH/200);
     fill("#301B26");
     stroke("#301B26");
-    rect(this.clockW/2, this.sec + this.divSec, this.clockW,this.clockH/900);
+    rect(this.clockW/2, this.sec + this.divS, this.clockW,this.clockH/900);
     
     fill("#301B26");
     noStroke();
@@ -124,7 +124,7 @@ class Clock {
     } else {
       textSize(24);
     }
-    text(this.local, 14, this.sec + this.divSec-this.clockH/300);
+    text(this.local, 14, this.sec + this.divS-this.clockH/300);
     pop();
   }
 }
