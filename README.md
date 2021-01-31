@@ -5,6 +5,9 @@ Have fun exploring!
 
 [the Website](https://zeitmaschine.xyz/)
 
+## Todos
+[]TODO clock readmes
+
 ## Code of Conduct
 
 _This should help navigating through the code in this repository_
